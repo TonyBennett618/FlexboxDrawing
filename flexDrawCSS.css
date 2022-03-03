@@ -1,0 +1,147 @@
+body{
+  margin: 0;
+}
+
+.bg{
+  width: 100vh;
+  height: 100vh;
+}
+
+.hexShip{
+  display: flex;
+  position: absolute;
+  margin-top:40px;
+  flex-wrap: wrap;
+  width: 1000px
+}
+
+#squareTop{
+  width: 300px;
+  height: 300px;
+  background: LightSlateGray;
+  position: relative;
+}
+
+#triangleTop{
+  width: 0;
+  height: 0;
+  border-top: 300px solid LightSlateGray;
+  border-right: 180px solid transparent;
+  position: relative;
+}
+
+#trapTop{
+  border-bottom: 300px solid SteelBlue;
+      border-left: 180px solid transparent;
+      border-right: 180px solid transparent;
+      height: 0;
+      width: 300px;
+}
+
+.shipBot{
+  display: flex;
+  position: relative;
+  margin-top:40px;
+  align-items: flex-end;
+}
+
+#squareBot{
+  width: 300px;
+  height: 300px;
+  background: LightBlue;
+  position: relative;
+}
+
+#triangleBot{
+  width: 0;
+  height: 0;
+  position: relative;
+  border-bottom: 300px solid LightBlue;
+  border-right: 180px solid transparent;
+}
+
+#trapBot{
+  border-top: 300px solid Gray;
+      border-left: 180px solid transparent;
+      border-right: 180px solid transparent;
+      height: 0;
+      width: 300px;
+}
+.negMarg{
+  margin-left: -180px;
+}
+
+#sideAdjust{
+  transform: translate(190px, 190px);
+}
+.smallShips{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  position: absolute;
+  justify-content: space-evenly;
+  clear: left;
+}
+
+.ship{
+      margin-top: 2px;
+
+     width: 0;
+     height: 0;
+     border-top: 20px solid transparent;
+     border-left: 80px solid  LightSteelBlue;
+     border-bottom: 20px solid transparent;
+}
+
+#slow{
+  animation: fly-slow 15s linear infinite;
+
+}
+
+@keyframes fly-slow{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(120vw);
+  }
+}
+
+#reg{
+  animation: fly-reg 10s linear infinite;
+  background-color:
+}
+@keyframes fly-reg{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(120vw);
+  }
+}
+
+#sortaFast{
+  animation: sorta-Fast 7.5s linear infinite;
+}
+
+@keyframes sorta-fast{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(120vw);
+  }
+}
+
+#fast{
+  animation: fly-fast 5s linear infinite;
+}
+
+@keyframes fly-fast{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(120vw);
+  }
+}
